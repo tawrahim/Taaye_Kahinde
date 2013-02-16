@@ -17,5 +17,5 @@ while guess != secret and tries <6:
 if guess == secret:
     print "UUUH FOOEY! Ye finally got it! Found my secret, ye did, ye remind me of the time when me friend Donkey and I were on one of our adventures to get past a troll and he asked many many questions but I still got them right! Well any ways the point is good job!" 
 else:
-    print "No more guesses! Ye lost! The secret number was none of your beeswax (something we pirates say these days).... ok stop givin me those googoo eyes heres the secret number", secret               
+    print "No more guesses! Ye lost! The secret number was none of your beeswax  (something we pirates say these days).... ok stop givin me those googoo eyes heres the secret number", secret               
     

@@ -16,10 +16,10 @@ print "The perimeter is"
 print perimeter
 
 faranheit = 75
-C = 5.0/9 * (faranheit - 32)
+C = 5/9 * float(faranheit - 32)
 print "Temprature is:"
 print C
 
-distance = 200/80.0
+distance = 200/float(80)
 print "The distance is: "
 print distance
