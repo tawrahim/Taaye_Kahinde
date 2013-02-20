@@ -1,23 +1,53 @@
-﻿#A store is having a sale. They’re giving 10 percent off purchases of $10 or lower, and 20 percent off purchases of greater than $10.
-#Write a program that asks the purchase price and displays the discount (10% or 20%) and the final price.
+# Question 1 
+purchasePrice = float(raw_input("What is the purchase price: "))
+if purchasePrice < 10:
+	discount = purchasePrice * .10
+	amount = purchasePrice - discount
+	print "You got a 10% discount of ", discount, " and you are required to pay ", amount
+elif purchasePrice > 10:
+	discount = purchasePrice * .20
+	amount = purchasePrice - discount
+	print "You got a 20% discount of ", discount, " and you are required to pay ", amount
+
+print "\n\n\n"
 
 
-#A soccer team is looking for girls from ages 10 to 12 to play on their team.
-#Write a program to ask the user’s age and if male or female (using “m” or “f”). Display a message indicating whether the person is eligible to play on the team.
-#Bonus: Make the program so that it doesn’t ask for the age unless the user is a girl.
+# Question 2
+gender = raw_input("What is your gender: ")
+if gender == "f":
+	age = int(raw_input("How old are you: "))
+	if 10 <= age <= 12:
+		print "you can play on the team"
+	else:
+		print "sorry you cant play on the team"
+else:
+	print "Sorry you need to be a female to be eligible for the team"
+
+print "\n\n\n"
 
 
-#You’re on a long car trip and arrive at a gas station. It’s 200 km to the next station. Write a program to figure out if you need to buy gas here, or if you can wait for the next station.
-#The program should ask these questions:
-#■ How big is your tank, in liters?
-#■ How full is your tank (in percent—for example, half full = 50)?
-#■ How many km per liter does your car get? The output should
-#look something like this:
+# Question 3
+size_of_tank = float(raw_input("Size of tank: "))
+percent_full = float(raw_input("Percent full: "))
+km_per_liter = float(raw_input("km per liter: "))
+remaining_gas = size_of_tank * (percent_full/100)
+distance = int(remaining_gas * km_per_liter)
+
+if distance > 200:
+	print "You can go another ", distance, "km"
+	print "The gas station is 200 km away"
+	print "You can wait for the next gas station"
+elif distance < 200:
+	print "You can go another ", distance, "km"
+	print "The gas station is 200km away"
+	print "Get gas now!"
+
+print "\n\n"
 
 
-
-#Make a program where the user has to enter a secret password to use the program.
-#You’ll know the password, of course (because it’ll be in your code). But your friends
-#will either have to ask you, guess the password, or learn enough Python to look at the code and figure it out!
-#The program can be anything you want, including one you have already written,
-#or just a simple one that displays a message like “You’re in!” when he enters the right password.
+# Question4
+password = raw_input("Enter the secret pass: ")
+if password == "secretpass":
+	print "Good Job, you know my password"
+else:
+	print "BYE!!!!!!"
