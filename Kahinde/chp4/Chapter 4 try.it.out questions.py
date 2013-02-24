@@ -24,8 +24,8 @@ print "\n\n\n\n"
 print "This is an example of a string being"
 print "converted to an integer"
 formula="int(string)"
-string="\"98.76\""
-doit=int(98.76)
+string="9876"
+doit=int(string)
 print "The string is:"
 print string
 print "This is the formula:"
@@ -34,5 +34,7 @@ print "This is the answer:"
 print doit
 print "All done by Kahinde Giwa"
 
+booboo=48.93
+int(booboo)
 
 
