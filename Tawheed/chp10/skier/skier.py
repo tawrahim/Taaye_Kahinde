@@ -131,34 +131,3 @@ while True:
 
     score_text = font.render("Score: " + str(points), 1, (0, 0, 0))
     animate()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-        
