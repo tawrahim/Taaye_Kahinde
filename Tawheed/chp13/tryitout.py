@@ -15,12 +15,17 @@ for i in range(3):
 	print ("\n\n\n")
 
 #Question2
-def info(name,address,street,city,country):
+def info(name,address,street,city,provice,postalcode,country):
 	print "Name: ", name
 	print "Address: ", address
 	print "Street: ", street
 	print "City:  ", city
+	print "Province: ", provice
+	print "Postal code", postalcode
 	print "Country: ", country
+
+info("Tawheed", "219", "Pearl Street", "Fitchburg", "MA", "01420", "USA")
+print "\n\n"
 
 # Question4 - nothing really :-)
 
