@@ -1,10 +1,15 @@
+# Code snippets to explain the following 
+# break, continue, while and for constructs
 sum = 0
 i = 0
-'''
+
+# Testing the for-loop logic
 while (i < 5):
     sum += i
     print sum
     i += 1
+
+# Testing the for loop
 for i in range(5):
     sum += i
     print sum
@@ -16,8 +21,7 @@ for i in range(5):
         break
     print i
 
-'''
-# Test while logic
+# Test the continue logic
 while (i < 5):
     i += 1
     if i == 3:
