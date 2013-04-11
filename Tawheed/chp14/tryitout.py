@@ -24,6 +24,7 @@ class BankAccount:
 		else:
 			print "You do not have sufficient funds in your account"
 
+# The InterestAccount class inherits from the BankAccount 
 class InterestAccount(BankAccount):
 	def addIntrest(self,rate):
 		intrest = self.balance * rate

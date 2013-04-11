@@ -15,31 +15,6 @@ class Animal:
 cow = Animal("fish")
 cow.__str__()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 class Animal:
     def __init__(self,food):
